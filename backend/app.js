@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 
 app.use('/api',userRoutes)
 
-mongoose.connect('mongodb://127.0.0.1:27017/mvc').then(() => {
+mongoose.connect('mongodb://localhost:27017/mvc').then(() => {
     console.log('Connected to MongoDB');
   }).catch((error) => {
     console.error('Error connecting to MongoDB:', error);
